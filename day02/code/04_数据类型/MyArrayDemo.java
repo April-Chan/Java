@@ -30,8 +30,8 @@ class MyArrayDemo {
 		}
 
 		int temp = 0;
-		for (int j=1; j<arr.length; j++) {
-			temp = arr[j-1]>=arr[j]?arr[j-1]:arr[j];
+		for (int j=0; j<arr.length; j++) {
+			temp = arr[j]>=temp?arr[j]:temp;
 		}
 		System.out.println("arr数组中最大值为：" +temp);
 	}
